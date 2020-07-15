@@ -1,40 +1,35 @@
-import React  from 'react';
-import './style.css'; 
-import { useState } from 'react';
+import React from "react";
+import "./style.css";
+import searchIcon from "../../assets/Icons/search.png";
 /**
-* @author
-* @function Navbar
-**/
+ * @author
+ * @function Navbar
+ **/
 
 const Navbar = (props) => {
+  const submitSearch = (event) => {
+    event.preventDefault();
+    alert("seacrhed");
+  };
 
-  
-    
-  const submitSearch =(event) =>{
-   event.preventDefault();
-    alert('seacrhed');
-
-} 
-
-  return(
-    <div classNmae="navbar">
-        <ul className="navbarMenu">
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">New arrivals</a></li>
-            
-        </ul>
-    <div className="search">
-      <form onSubmit={submitSearch}>
-      <input type="text" className="searchinput" placeholder="search"/>
-     Search 
-      </form>
-     
-        </div>
+  return (
+    <div className="navbar">
+      <ul className="navbarMenu">
+        <li>
+          <a href="#">Photos</a>
+        </li>
+        <li>
+          <a href="#">New arrivals</a>
+        </li>
+      </ul>
+      <div className="search">
+        <form onSubmit={submitSearch}>
+          <input type="text" className="search-input" placeholder="search" />
+          <img className="search-icon" src={searchIcon} alt="Search Icon" />
+        </form>
       </div>
-    
-      
-   )
+    </div>
+  );
+};
 
- }
-
-export default Navbar
+export default Navbar;

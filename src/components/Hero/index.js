@@ -1,27 +1,25 @@
-import React from 'react'
-import'./style.css';
-import Card from '../UI/Card';
-import Logo from '../logo';
-import Navbar from '../Navbar';
+import React from "react";
+import "./style.css";
+import Card from "../UI/Card";
+import Logo from "../logo";
+import Navbar from "../Navbar";
 
 /**
-* @author
-* @function Hero
-**/
+ * @author
+ * @function Hero
+ **/
 
 const Hero = (props) => {
-  return(
+  return (
     <div>
-     <Card>
-       <div style={{padding:'50px 0'}}>
-     <Logo/>
-    
-       </div> 
-       <Navbar/>    
-       </Card>  
-       </div>  
-       
-   )
- }
+      <Card>
+        <div style={{ padding: "4px 0" }}>
+          <Logo />
+        </div>
+        <Navbar />
+      </Card>
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
