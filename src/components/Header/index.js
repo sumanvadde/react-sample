@@ -14,7 +14,9 @@ const Header = (props) => {
         <a href="#">About us</a>
         <a href="#">Contact us</a>
       </nav>
+    
       <div>Social Media Icons</div>
+     
     </header>
   );
 };

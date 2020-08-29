@@ -1,0 +1,18 @@
+
+
+.aboutusimage{
+    width: 200%;
+    
+     
+}
+.aboutusimage div{
+    width: 1105px;
+    height: 200%;
+    object-fit: cover;
+}
+.aboutusimage div img{
+    width: 100%;
+    height: 100%;
+    max-width: 200%;
+    object-fit: cover;
+}
